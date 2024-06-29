@@ -25,7 +25,17 @@ docker run --name quicknextjs-container -p 3001:3000 nextjs:latest
 
 
 
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+#to build the docker image use the commend 
+#sudo docker build -t nextjs .
+
+#to run the docker image it automatic create the container 
+#docker run -p 3001:3000 nextjs:latest
+
+#to run the docker image using the name of the name of the container 
+docker run --name quicknextjs-container -p 3001:3000 nextjs:latest
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
